@@ -1,0 +1,11 @@
+<div *ngIf="user">
+    <p>Signed in as: <strong>{{ user.email }}</strong></p>
+    <input [(ngModel)]="messageText" placeholder="Type a message..." />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+
+<div class="chat-container">
+    <div *ngFor="let msg of messages">
+      <strong>{{ msg.user }}:</strong> {{ msg.text }}
+    </div>
+  </div>

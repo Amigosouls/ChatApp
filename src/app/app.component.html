@@ -1,8 +1,1 @@
-<div class="chat-container">
-  <div *ngFor="let msg of messages">
-    <strong>{{ msg.user }}:</strong> {{ msg.text }}
-  </div>
-
-  <input [(ngModel)]="newMessage" placeholder="Type a message..." />
-  <button (click)="sendMessage()">Send</button>
-</div>
+<router-outlet></router-outlet>
